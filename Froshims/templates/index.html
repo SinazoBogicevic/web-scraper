@@ -1,0 +1,35 @@
+{% extends "layout.html" %} {% block body %}
+
+<form action="/registry" method="POST">
+  <label>
+    Name
+    <input type="text" placeholder="Name" name="name" />
+  </label>
+  <br />
+
+  <label>
+    Student no.
+    <input type="number" placeholder="Student number" name="studentNo" />
+  </label>
+  <br />
+
+  <label>
+    Email:
+    <input type="email" placeholder="email" name="mail" />
+  </label>
+  <br />
+
+  <label>
+    Dorm:
+    <select name="dorm">
+      <option diable selected-value>--Pick an Option--</option>
+      <option value="Erica">Erica</option>
+      <option value="GoldFields">GoldFields</option>
+      <option value="Huis">Huis</option>
+    </select>
+  </label>
+  <br />
+
+  <button type="submit">Register</button>
+</form>
+{% endblock %}

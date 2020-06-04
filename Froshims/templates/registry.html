@@ -1,0 +1,10 @@
+{% extends "layout.html" %} {% block body %}
+
+<h3>Successful</h3>
+<ul>
+  {% for student in updatedList %}
+  <li>{{ student["name"] }}</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
